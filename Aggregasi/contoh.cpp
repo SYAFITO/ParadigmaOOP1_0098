@@ -1,5 +1,6 @@
 #include "anak.h"
 #include "ibu.h"
+using namespace std;
 
 int main() {
     ibu* varibu = new ibu("dini");

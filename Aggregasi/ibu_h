@@ -1,25 +1,29 @@
-class ibu {
-public:
-   string nama;
-   vector<anak*> daftar_anak;
+#ifndef IBU_H
+#define IBU_H
 
-    ibu(string pNama) :nama(pNama){
-        cout <<"Ibu \"" <<nama << "\" ada\n";
+class ibu {
+ public:   
+    string nama;
+    vector<anak*> daftar_anak;
+
+    ibu(string pNama) :nama(pNama) {
+        cout << "Ibu \"" << nama << "\" ada\n";
     }
-    ~ibu(){
+    ~ibu() {
         cout << "Ibu \"" << nama << "\" tidak ada\n";
     }
-    void tambahAnak(anak*);
+    void tambahAnak(anak8);
     void cetakAnak();
+
 };
-void ibu::tambahAnak(anak* pAnak){
+void ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
 void ibu::cetakAnak() {
-    cout << "Daftar Anak dari ibu \"" << this->nama << "\":\n";
+    cout l<< "Daftar Anak dari ibu \"" << this ->nama << "\":\n";
     for (auto& a : daftar_anak) {
         cout << a->nama << "\n";
     }
     cout << endl;
-}
+};
 #endif
